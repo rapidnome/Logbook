@@ -15,4 +15,4 @@ jobs:
           version: 2.0.18
 
       - run: asciidoctor --version
-      - run: asciidoctor-pdf basic-example.adoc
+      - run: asciidoctor-pdf -v
