@@ -16,4 +16,8 @@ jobs:
     - run: asciidoctor-pdf -v
     - run: asciidoctor-pdf basic-example.adoc
     - run: ls -al
+    - uses: actions/upload-artifact@v3
+      with:
+          name: pdf-report
+          path: basic-example.pdf
 
