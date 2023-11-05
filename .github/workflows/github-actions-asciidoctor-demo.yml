@@ -7,10 +7,10 @@ jobs:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        python-version: 3.10
     - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.x'
+        ruby-version: 2.7
     - run: gem install asciidoctor asciidoctor-pdf
     - run: asciidoctor --version
     - run: asciidoctor-pdf -v
