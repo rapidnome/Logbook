@@ -15,3 +15,5 @@ jobs:
     - run: asciidoctor --version
     - run: asciidoctor-pdf -v
     - run: asciidoctor-pdf basic-example.adoc
+    - run: ls -al
+
