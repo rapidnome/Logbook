@@ -4,15 +4,13 @@ jobs:
   example:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.7
-
-      - uses: reitzig/actions-asciidoctor@v2.0.1
-        with:
-          version: 2.0.18
-
-      - run: asciidoctor --version
-      - run: asciidoctor-pdf -v
+    - uses: actions/checkout
+    - uses: actions/setup-python
+      with:
+        python-version: '3.x'
+    - uses: actions/setup-ruby
+      with:
+        ruby-version: '2.x'
+    - run: gem install asciidoctor asciidoctor-pdf
+    - run: asciidoctor --version
+    - run: asciidoctor-pdf -v
