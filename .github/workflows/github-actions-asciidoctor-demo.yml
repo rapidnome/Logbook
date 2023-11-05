@@ -1,10 +1,5 @@
 name: Asciidoctor Demo
-
-on:
-  push:
-    branches:
-      - master
-
+on: [push]
 jobs:
   example:
     runs-on: ubuntu-latest
