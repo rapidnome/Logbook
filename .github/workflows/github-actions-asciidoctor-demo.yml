@@ -14,3 +14,4 @@ jobs:
     - run: gem install asciidoctor asciidoctor-pdf
     - run: asciidoctor --version
     - run: asciidoctor-pdf -v
+    - run: asciidoctor-pdf basic-example.adoc
