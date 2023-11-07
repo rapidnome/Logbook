@@ -19,6 +19,7 @@ A paragraph followed by an unordered list{empty}footnote:[AsciiDoc supports unor
 * item 1
 * item 2
 * item 3
+* item 4
 
 == Main
 
