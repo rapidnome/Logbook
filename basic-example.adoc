@@ -34,6 +34,20 @@ Prawn::Document.generate 'example.pdf' do
   text 'Hello, World!'
 end
 ----
+== Guideline template
+
+Guidelines are documented by using a standard template. Use of this template is recommended when creating original quidelines.
+
+Note: This template specifies the minimum requirements that are needed to understand a guideline.
+New items can be added to the template as long as they do not duplicate existing information.
+
+[cols="<s,<"]
+|===
+|Rule ID: Title|xx_nnnn: Title of the guideline (unique, short)
+|Sub ID Recommendations
+|NA-MAAB: x, y, z
+JMAAB: X, Y, z
+|===
 
 == Conclusion
 
